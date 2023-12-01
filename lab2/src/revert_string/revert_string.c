@@ -9,4 +9,3 @@ void RevertString(char *str)
         str[length - 1 - i] = temp;
     }
 }
-
