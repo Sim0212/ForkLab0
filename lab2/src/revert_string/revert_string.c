@@ -1,6 +1,6 @@
 #include "revert_string.h"
 
-void RevertString(char *str)
+extern void RevertString(char *str)
 {
 	int length = strlen(str);
     for (int i = 0; i < length / 2; i++) {
