@@ -24,3 +24,5 @@ separate_process.o : separate_process.c
 
 clean :
 	rm utils.o find_min_max.o sequential_min_max parallel_min_max
+
+all: $(TARGETS)
