@@ -25,6 +25,6 @@ sum.o : sum.h sum.c
 	$(CC) -g -o sum.o -c sum.c $(CFLAGS)
 
 clean :
-	rm utils.o find_min_max.o parallel_min_maxtest.txt
+	rm utils.o find_min_max.o
 
 all: $(TARGETS)
