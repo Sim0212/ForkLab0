@@ -19,7 +19,7 @@ process_memory :
 	$(CC) -o process_memory process_memory.c $(CFLAGS)
 
 parallel_sum : utils.o sum.o utils.h sum.h parallel_sum.c
-	$(CC) -g -o parallel_sum utils.o sum.o parallel_sum.c $(CFLAGS)
+	$(CC) -g -o -pthread parallel_sum utils.o sum.o parallel_sum.c $(CFLAGS)
 
 sum.o : sum.h sum.c
 	$(CC) -g -o sum.o -c sum.c $(CFLAGS)
