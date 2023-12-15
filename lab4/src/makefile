@@ -25,6 +25,6 @@ sum.o : sum.h sum.c
 	$(CC) -g -o sum.o -c sum.c $(CFLAGS)
 
 clean :
-	rm utils.o find_min_max.o
+	rm utils.o find_min_max.o parallel_min_max process_memory sum.o zombie
 
 all: $(TARGETS)
